@@ -1,0 +1,12 @@
+#+title: Etch-a-Sketch
+
+** About this project
+
+The aim of this project is to strengthen my DOM manipulation skills in JavaScript by
+creating a basic Etch-a-Sketch game. The game consists of a grid with configurable size,
+where the player can draw by hovering over.
+
+** Links
+
++ [[https://www.theodinproject.com/about][About Odin]]
++ [[https://www.theodinproject.com/lessons/foundations-etch-a-sketch][Assignment page]]

@@ -1,18 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-  <body>
+<body>
     <h1>Etch-a-Sketch</h1>
-    <div class="grid-container"></div>
+    <div class="content">
+        <div class="control-panel">
+            <div class="size-slider">
+                <label for="grid-size"><span class="size">16</span>x<span class="size">16</span></label>
+                <input type="range" name="grid-size" id="grid-size" min="10" max="100" />
+                <button id="regenerate-grid">Regenerate</button>
+            </div>
+            <button id="clear-grid">Clear</button>
+            <div class="drawing-modes">
+                <button class="active" id="pencil">Pencil Mode</button>
+                <button id="eraser">Eraser Mode</button>
+            </div>
+        </div>
+        <div class="grid-container"></div>
+    </div>
     <footer>
-      <p>Thomsn1337</p>
+        <p>Thomsn1337 © 2023</p>
+        <a href="https://github.com/Thomsn1337"><i class="fa fa-github"></i></a>
     </footer>
     <script src="./src/index.js"></script>
-  </body>
+</body>
+
 </html>

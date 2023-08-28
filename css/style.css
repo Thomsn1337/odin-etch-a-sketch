@@ -36,6 +36,9 @@ h1 {
 .control-panel {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
   width: 300px;
 }
 
@@ -100,6 +103,11 @@ button:hover {
   color: var(--main-bg-color);
 }
 
+.active {
+  background-color: var(--outline-color);
+  color: var(--main-bg-color);
+}
+
 .grid-container {
   user-select: none;
   display: flex;
@@ -109,6 +117,7 @@ button:hover {
   outline: 4px solid var(--outline-color);
   border-radius: 15px;
   overflow: hidden;
+  margin-left: 64px;
 }
 
 .grid {

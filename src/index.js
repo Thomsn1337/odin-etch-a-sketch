@@ -1,6 +1,6 @@
 let gridSize = 20;
 let mouseState = false;
-const defaultColor = "#e3dde2";
+const defaultColor = "#cad3f5";
 
 const gridContainer = document.querySelector(".grid-container");
 

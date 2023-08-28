@@ -10,6 +10,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   color: var(--main-fg-color);
 }
 
@@ -26,6 +27,77 @@ body {
 
 h1 {
   font-size: 48px;
+}
+
+.content {
+  display: flex;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.size-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="range"] {
+  background: transparent;
+  appearance: none;
+  width: 240px;
+  cursor: pointer;
+  margin: 10px 0 20px 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--outline-color);
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: var(--outline-color);
+  height: 6px;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--outline-color);
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--outline-color);
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 50%;
+}
+
+button {
+  width: 240px;
+  height: 40px;
+  color: var(--main-fg-color);
+  background-color: transparent;
+  border: 2px solid var(--outline-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: var(--outline-color);
+  color: var(--main-bg-color);
 }
 
 .grid-container {

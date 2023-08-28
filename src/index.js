@@ -3,6 +3,9 @@ let mouseState = false;
 const defaultColor = "#cad3f5";
 
 const gridContainer = document.querySelector(".grid-container");
+const gridSizeLabels = document.querySelectorAll(".size");
+const gridSizeSlider = document.querySelector("#grid-size");
+const regenerateButton = document.querySelector("#regenerate-grid");
 
 function generateGrid() {
   document.documentElement.style.setProperty("--grid-size", gridSize);
@@ -17,6 +20,28 @@ function generateGrid() {
   }
 }
 
-window.addEventListener("load", generateGrid);
+function deleteGrid() {
+  while (gridContainer.firstChild) {
+    gridContainer.removeChild(gridContainer.lastChild);
+  }
+}
+
+function regenerateGrid() {
+  deleteGrid();
+  gridSize = gridSizeSlider.value;
+  generateGrid();
+}
+
+gridSizeSlider.addEventListener("input", function () {
+  gridSizeLabels.forEach(label => label.textContent = this.value);
+});
+
+regenerateButton.addEventListener("click", regenerateGrid);
+
+window.addEventListener("load", () => {
+  generateGrid();
+  gridSizeSlider.value = gridSize;
+  gridSizeLabels.forEach(label => label.textContent = gridSize);
+});
 window.addEventListener("mousedown", () => (mouseState = true));
 window.addEventListener("mouseup", () => (mouseState = false));

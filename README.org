@@ -8,5 +8,6 @@ where the player can draw by hovering over.
 
 ** Links
 
++ [[https://thomsn1337.github.io/odin-etch-a-sketch/][Preview]]
 + [[https://www.theodinproject.com/about][About Odin]]
 + [[https://www.theodinproject.com/lessons/foundations-etch-a-sketch][Assignment page]]
